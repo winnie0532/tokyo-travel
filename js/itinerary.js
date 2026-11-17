@@ -44,9 +44,9 @@ const itinerary = [
         ]
       },
       {
-        time: "Lunch",
+        time: "12:00",
         title: "🥩 牛たんの檸檬 有楽町店",
-        description: "Booking 12:00",
+        description: "Lunch｜牛舌 : P",
         links: [
           { label: "Google Map", url: "https://www.google.com/maps/search/?api=1&query=牛たんの檸檬+有楽町店" }
         ]
@@ -64,19 +64,10 @@ const itinerary = [
       {
         time: "Dinner",
         title: "Shinjuku Station",
-        description: "新宿晚餐",
-        links: [
-          { label: "ＢＵＳＴＡ新宿", url: "https://maps.app.goo.gl/H2QmiHKLMqd1GTUG9" },
-          { label: "🍣 Sushi", url: "https://maps.app.goo.gl/t3gXxpFhaxzkt3YU8" }
-
-        ]
-      },
-      {
-        time: "19:45",
-        title: "🚆 新宿 → 河口湖站",
-        description: "1383 19:45 - 21:40",
+        description: "(1383)🚆新宿 → 河口湖站 19:45 - 21:40",
         links: [
           { label: "新宿(南口)", url: "https://maps.app.goo.gl/AqHEaeF1pevGTu7M7" },
+          { label: "🍣 Sushi", url: "https://maps.app.goo.gl/t3gXxpFhaxzkt3YU8" },
           { label: "車票", url: "https://mail.google.com/mail/u/1/#inbox/FMfcgzQjgqPzHpvjJQQrsGpJXSFWhMJJ" }
         ]
       }
@@ -90,29 +81,53 @@ const itinerary = [
     date: "12.12", tab: "12/12 · 河口湖", weekday: "SAT · DAY 03", theme: "河口湖・山中湖",
     image: "assets/images/fuji.jpg", imageAlt: "富士山景色",
     events: [
-      { time: "12:00 — 19:00", title: "🎁 領取加購商品", description: "商品攤位開放時間。" },
-      { time: "其他時間", title: "🗻 山中湖走走", description: "湖畔散步、欣賞富士山風景。",
+      { time: "領物資", title: "Fuji Marathon 加購商品", description: "12:00 — 19:00" },
+      { time: "悠悠哉哉", title: "🗻 山中湖走走", description: "湖畔散步、欣賞富士山風景。",
         links: [{ label: "山中湖地圖", url: "https://www.google.com/maps/search/?api=1&query=山中湖" }] }
     ],
-    info: "<strong>商品攤位時間</strong><br>12/12（六）12:00～19:00<br>12/13（日）07:00～16:00",
-    hotel: "Hospitable inn NIIYA Mt.Fuji", hotelNote: "河口湖住宿"
+    info: "<strong>Fuji Marathon 攤位時間</strong><br>12/12（六）12:00～19:00<br>12/13（日）07:00～16:00",
+    hotel: "Hospitable inn NIIYA Mt.Fuji",
+    hotelNote: "河口湖住宿",
+    hotelMapUrl: "https://maps.app.goo.gl/z3LixTwjrnkqbHKT6"
   },
+
+
   {
     date: "12.13", tab: "12/13 · 馬拉松", weekday: "SUN · DAY 04", theme: "RACE DAY",
     image: "assets/images/fuji.jpg", imageAlt: "富士山與湖景",
     events: [
-      { time: "07:00 — 16:00", title: "🎁 領取加購商品", description: "商品攤位開放時間，請留意賽事安排。" },
-      { time: "依賽事時程", title: "🏃‍♀️ 富士山馬拉松", description: "河口湖・山中湖｜完賽後記得領取物品。",
-        links: [{ label: "賽事資訊", url: "https://www.google.com/search?q=富士山マラソン+公式" }] },
-      { time: "完賽後", title: "🚌 接駁前往御殿場飯店", description: "接駁時間與乘車地點待補。" },
-      { time: "晚餐・人在附近時", title: "🍖 靜岡炭烤漢堡排 さわやか", description: "可使用 LINE 預約／取號。",
+      {
+        time: "06:00 —",
+        title: "領物資",
         links: [
-          { label: "LINE 預約", url: "https://miniapp.line.me/2006055787-m6P6OJ38/ticketing/3273/" },
-          { label: "附近分店地圖", url: "https://www.google.com/maps/search/?api=1&query=炭焼きレストランさわやか+御殿場" }
-        ] }
+          { label: "Fujikyu Travel", url: "https://maps.app.goo.gl/WfPUw3eGuMHxGDx28" },
+          { label: "簡章", url: "assets/運動生活.pdf" }
+        ]
+      },
+      {
+        time: "10:30",
+        title: "🏃‍♀️ Fuji Marathon",
+        description: "河口湖・山中湖｜完賽後記得領取物品。",
+        links: [
+          { label: "賽事資訊", url: "https://www.google.com/search?q=富士山マラソン+公式" }
+        ]
+      },
+      {
+        time: "完賽後",
+        title: "🚌 接駁前往御殿場飯店",
+        description: "靜岡炭烤漢堡排 さわやか",
+        links: [
+          { label: "🍖さわやか", url: "https://maps.app.goo.gl/rcMD8BmBaWREDww3A" },
+          { label: "LINE 預約", url: "https://miniapp.line.me/2006055787-m6P6OJ38/ticketing/3273/" }
+        ]
+      }
     ],
-    hotel: "Hotel Route-Inn Gotemba Eki-Minami", hotelNote: "御殿場住宿｜地址與訂房連結待補"
+    hotel: "Hotel Route-Inn Gotemba Eki-Minami",
+    hotelNote: "御殿場住宿",
+    hotelMapUrl: "https://maps.app.goo.gl/BkDXQLs5g8bgdUx96"
   },
+
+
   {
     date: "12.14", tab: "12/14 · 箱根", weekday: "MON · DAY 05", theme: "箱根慢旅行",
     image: "assets/images/hakone.jpg", imageAlt: "箱根風景",
