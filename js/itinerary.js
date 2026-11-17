@@ -4,16 +4,36 @@
  */
 const itinerary = [
   {
-    date: "12.10", tab: "12/10 · 東京", weekday: "THU · DAY 01", theme: "抵達東京",
-    image: "assets/images/tokyo.jpg", imageAlt: "東京街景",
+    date: "12.10",
+    tab: "12/10 · 東京",
+    weekday: "THU · DAY 01",
+    theme: "抵達東京",
+    image: "assets/images/tokyo.jpg",
+    imageAlt: "東京街景",
+
     events: [
-      { time: "14:25 — 18:30", title: "✈️ 台北 → 東京成田", description: "TPE 第一航廈 → NRT 第一航廈",
-        links: [{ label: "成田機場官網", url: "https://www.narita-airport.jp/" }] },
-      { time: "抵達後・彈性安排", title: "ナガノマーケット GINZA", description: "如果提早抵達、且店鋪營業時間允許，可安排購買餅餅。",
-        links: [{ label: "地圖導航", url: "https://www.google.com/maps/search/?api=1&query=ナガノマーケット+GINZA" }] }
+      {
+        time: "14:25 — 18:30",
+        title: "✈️ 台北 → 東京成田",
+        description: "TPE 第一航廈 → NRT 第一航廈"
+      },
+      {
+        time: "抵達後・彈性安排",
+        title: "ナガノマーケット GINZA",
+        description: "打烊時間 21:00",
+
+        image: "assets/images/nagano-market-ginza.png",
+
+        imageLink: "https://www.google.com/maps/search/?api=1&query=Ginza+Station",
+
+      }
     ],
-    hotel: "N+HOTEL", hotelNote: "東京住宿｜地址與訂房連結待補"
+
+    hotel: "N+HOTEL",
+    hotelNote: "東京住宿",
+    hotelMapUrl: "https://maps.app.goo.gl/cTn4tRjMTTB4pNEAA"
   },
+
   {
     date: "12.11", tab: "12/11 · 東京", weekday: "FRI · DAY 02", theme: "東京 → 河口湖",
     image: "assets/images/tokyo.jpg", imageAlt: "東京城市風景",
@@ -21,17 +41,17 @@ const itinerary = [
       { time: "早上", title: "🏃 皇居晨跑", description: "跑步後回飯店整理行李、Check-out。",
         links: [{ label: "皇居地圖", url: "https://www.google.com/maps/search/?api=1&query=皇居+東京" }] },
       { time: "上午・彈性安排", title: "ナガノマーケット GINZA", description: "購買餅餅。",
-        links: [{ label: "地圖導航", url: "https://www.google.com/maps/search/?api=1&query=ナガノマーケット+GINZA" }] },
+        links: [{ label: "Google Map", url: "https://www.google.com/maps/search/?api=1&query=ナガノマーケット+GINZA" }] },
       { time: "12:00", title: "🥩 牛たんの檸檬 有楽町店", description: "午餐。",
-        links: [{ label: "地圖導航", url: "https://www.google.com/maps/search/?api=1&query=牛たんの檸檬+有楽町店" }] },
+        links: [{ label: "Google Map", url: "https://www.google.com/maps/search/?api=1&query=牛たんの檸檬+有楽町店" }] },
       { time: "14:00 — 15:40", title: "🎭 ROCKZA 劇場", description: "表演時間。",
-        links: [{ label: "地圖導航", url: "https://www.google.com/maps/search/?api=1&query=ROCKZA+劇場+東京" }] },
+        links: [{ label: "Google Map", url: "https://www.google.com/maps/search/?api=1&query=ROCKZA+劇場+東京" }] },
       { time: "下午", title: "回 N+HOTEL 拿行李", description: "接著前往 Alpen TOKYO 領取物資。",
         links: [{ label: "Alpen TOKYO", url: "https://www.google.com/maps/search/?api=1&query=Alpen+TOKYO" }] },
       { time: "晚餐", title: "🍣 Sushi Ninomiya Tokyo Shinjuku", description: "新宿晚餐。",
-        links: [{ label: "地圖導航", url: "https://www.google.com/maps/search/?api=1&query=Sushi+Ninomiya+Tokyo+Shinjuku" }] },
+        links: [{ label: "Google Map", url: "https://www.google.com/maps/search/?api=1&query=Sushi+Ninomiya+Tokyo+Shinjuku" }] },
       { time: "19:45 — 21:40", title: "🚆 新宿 → 河口湖", description: "搭車前往河口湖。",
-        links: [{ label: "查看交通", url: "https://www.google.com/maps/dir/?api=1&origin=新宿駅&destination=河口湖駅&travelmode=transit" }] }
+        links: [{ label: "Google Map", url: "https://www.google.com/maps/dir/?api=1&origin=新宿駅&destination=河口湖駅&travelmode=transit" }] }
     ],
     hotel: "Hospitable inn NIIYA Mt.Fuji", hotelNote: "河口湖住宿｜地址與訂房連結待補"
   },

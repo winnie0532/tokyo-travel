@@ -11,6 +11,7 @@ function createLink(link) {
   return anchor;
 }
 
+
 function renderEvent(event) {
   const article = document.createElement("article");
   article.className = "event";
@@ -30,14 +31,46 @@ function renderEvent(event) {
     article.append(description);
   }
 
+  // 景點圖片
+  if (event.image) {
+    const image = document.createElement("img");
+    image.src = event.image;
+    image.alt = event.title || "行程圖片";
+    image.className = "event-image";
+    image.loading = "lazy";
+
+    image.onerror = () => {
+      image.style.display = "none";
+    };
+
+    // 圖片可點擊開啟 Google Maps
+    if (event.imageLink) {
+      const imageLink = document.createElement("a");
+      imageLink.href = event.imageLink;
+      imageLink.target = "_blank";
+      imageLink.rel = "noopener noreferrer";
+      imageLink.append(image);
+
+      article.append(imageLink);
+    } else {
+      article.append(image);
+    }
+  }
+
   if (event.links?.length) {
     const links = document.createElement("div");
     links.className = "event-links";
-    event.links.forEach(link => links.append(createLink(link)));
+
+    event.links.forEach(link => {
+      links.append(createLink(link));
+    });
+
     article.append(links);
   }
+
   return article;
 }
+
 
 function renderDay(day, index) {
   const section = document.createElement("section");
@@ -84,14 +117,52 @@ function renderDay(day, index) {
     stayTitle.className = "section-title";
     stayTitle.textContent = "今晚住宿　/　STAY";
 
+    
     const hotel = document.createElement("div");
     hotel.className = "hotel-card";
-    hotel.innerHTML = `
-      <div class="hotel-icon" aria-hidden="true">🏡</div>
-      <div><b></b><small></small></div>
-    `;
-    hotel.querySelector("b").textContent = day.hotel;
-    hotel.querySelector("small").textContent = day.hotelNote || "";
+
+    // 房子圖示
+    const hotelIcon = document.createElement("div");
+    hotelIcon.className = "hotel-icon";
+    hotelIcon.textContent = "🏡";
+
+    // 如果有 Google Maps 連結，房子圖示就可以點擊
+    if (day.hotelMapUrl) {
+      const mapLink = document.createElement("a");
+      mapLink.href = day.hotelMapUrl;
+      mapLink.target = "_blank";
+      mapLink.rel = "noopener noreferrer";
+      mapLink.className = "hotel-map-link";
+      mapLink.append(hotelIcon);
+
+      hotel.append(mapLink);
+    } else {
+      hotel.append(hotelIcon);
+    }
+
+    // 飯店名稱及說明
+    const hotelInfo = document.createElement("div");
+
+    const hotelName = document.createElement("b");
+    hotelName.textContent = day.hotel;
+
+    const hotelNote = document.createElement("small");
+    hotelNote.textContent = day.hotelNote || "";
+
+    hotelInfo.append(hotelName, hotelNote);
+    hotel.append(hotelInfo);
+
+
+    if (day.hotelLinks?.length) {
+      const links = document.createElement("div");
+      links.className = "event-links";
+
+      day.hotelLinks.forEach(link => {
+        links.append(createLink(link));
+      });
+
+      hotel.querySelector("div:last-child").append(links);
+    }
 
     section.append(stayTitle, hotel);
   }
