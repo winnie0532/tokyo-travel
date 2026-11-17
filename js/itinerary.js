@@ -48,7 +48,7 @@ const itinerary = [
         title: "🥩 牛たんの檸檬 有楽町店",
         description: "Lunch｜牛舌 : P",
         links: [
-          { label: "Google Map", url: "https://www.google.com/maps/search/?api=1&query=牛たんの檸檬+有楽町店" }
+          { label: "牛たんの檸檬", url: "https://www.google.com/maps/search/?api=1&query=牛たんの檸檬+有楽町店" }
         ]
       },
       {
@@ -57,7 +57,7 @@ const itinerary = [
         description: "表演時間 14:00 — 15:40",
         links: [
           { label: "ROCKZA", url: "https://www.google.com/maps/search/?api=1&query=ROCKZA+劇場+東京" },
-          { label: "回 N+HOTEL 領行李", url: "https://maps.app.goo.gl/cTn4tRjMTTB4pNEAA" },
+          { label: "N+HOTEL 領行李", url: "https://maps.app.goo.gl/cTn4tRjMTTB4pNEAA" },
           { label: "Alpen TOKYO 領物資", url: "https://maps.app.goo.gl/ndW6gjRMmKhA2DqC7" }
         ]
       },
@@ -68,7 +68,7 @@ const itinerary = [
         links: [
           { label: "新宿(南口)", url: "https://maps.app.goo.gl/AqHEaeF1pevGTu7M7" },
           { label: "🍣 Sushi", url: "https://maps.app.goo.gl/t3gXxpFhaxzkt3YU8" },
-          { label: "車票", url: "https://mail.google.com/mail/u/1/#inbox/FMfcgzQjgqPzHpvjJQQrsGpJXSFWhMJJ" }
+          { label: "車票", url: "assets/images/Shinjuku-MtFuji.png" }
         ]
       }
     ],
@@ -81,7 +81,7 @@ const itinerary = [
     date: "12.12", tab: "12/12 · 河口湖", weekday: "SAT · DAY 03", theme: "河口湖・山中湖",
     image: "assets/images/fuji.jpg", imageAlt: "富士山景色",
     events: [
-      { time: "領物資", title: "Fuji Marathon 加購商品", description: "12:00 — 19:00" },
+      { time: "12:00 —", title: "Fuji Marathon 加購商品", description: "攤位時間 : 12:00—19:00" },
       { time: "悠悠哉哉", title: "🗻 山中湖走走", description: "湖畔散步、欣賞富士山風景。",
         links: [{ label: "山中湖地圖", url: "https://www.google.com/maps/search/?api=1&query=山中湖" }] }
     ],
@@ -101,20 +101,20 @@ const itinerary = [
         title: "領物資",
         links: [
           { label: "Fujikyu Travel", url: "https://maps.app.goo.gl/WfPUw3eGuMHxGDx28" },
-          { label: "簡章", url: "assets/運動生活.pdf" }
+          { label: "運動X生活", url: "assets/運動生活.pdf" }
         ]
       },
       {
         time: "10:30",
         title: "🏃‍♀️ Fuji Marathon",
-        description: "河口湖・山中湖｜完賽後記得領取物品。",
+        description: "河口湖・山中湖｜完賽後記得領物品!",
         links: [
           { label: "賽事資訊", url: "https://www.google.com/search?q=富士山マラソン+公式" }
         ]
       },
       {
-        time: "完賽後",
-        title: "🚌 接駁前往御殿場飯店",
+        time: "接駁前往御殿場飯店",
+        title: "🚌 御殿場",
         description: "靜岡炭烤漢堡排 さわやか",
         links: [
           { label: "🍖さわやか", url: "https://maps.app.goo.gl/rcMD8BmBaWREDww3A" },
