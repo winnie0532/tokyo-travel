@@ -12,6 +12,7 @@ function createLink(link) {
 }
 
 
+
 function renderEvent(event) {
   const article = document.createElement("article");
   article.className = "event";
@@ -27,11 +28,11 @@ function renderEvent(event) {
 
   if (event.description) {
     const description = document.createElement("p");
-    description.textContent = event.description;
+    description.innerHTML = event.description.replace(/\n/g, "<br>");
     article.append(description);
   }
 
-  // 景點圖片
+  // 單張景點圖片
   if (event.image) {
     const image = document.createElement("img");
     image.src = event.image;
@@ -43,20 +44,47 @@ function renderEvent(event) {
       image.style.display = "none";
     };
 
-    // 圖片可點擊開啟 Google Maps
     if (event.imageLink) {
       const imageLink = document.createElement("a");
       imageLink.href = event.imageLink;
       imageLink.target = "_blank";
       imageLink.rel = "noopener noreferrer";
       imageLink.append(image);
-
       article.append(imageLink);
     } else {
       article.append(image);
     }
   }
 
+  // 多張景點圖片
+  if (event.images?.length) {
+    const imageGallery = document.createElement("div");
+    imageGallery.className = "event-image-gallery";
+
+    event.images.forEach(item => {
+      const image = document.createElement("img");
+      image.src = item.src;
+      image.alt = item.alt || "景點圖片";
+      image.className = "event-image";
+      image.loading = "lazy";
+
+      image.onerror = () => {
+        image.style.display = "none";
+      };
+
+      const imageLink = document.createElement("a");
+      imageLink.href = item.url;
+      imageLink.target = "_blank";
+      imageLink.rel = "noopener noreferrer";
+      imageLink.append(image);
+
+      imageGallery.append(imageLink);
+    });
+
+    article.append(imageGallery);
+  }
+
+  // 行程連結
   if (event.links?.length) {
     const links = document.createElement("div");
     links.className = "event-links";

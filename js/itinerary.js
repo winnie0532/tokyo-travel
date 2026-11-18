@@ -31,8 +31,12 @@ const itinerary = [
   },
 
   {
-    date: "12.11", tab: "12/11 · 東京", weekday: "FRI · DAY 02", theme: "東京 → 河口湖",
-    image: "assets/images/tokyo.jpg", imageAlt: "東京城市風景",
+    date: "12.11", 
+    tab: "12/11 · 東京", 
+    weekday: "FRI · DAY 02", 
+    theme: "東京 → 河口湖",
+    image: "assets/images/tokyo.jpg", 
+    imageAlt: "東京城市風景",
     events: [
       {
         time: "早上",
@@ -78,12 +82,17 @@ const itinerary = [
   },
 
   {
-    date: "12.12", tab: "12/12 · 河口湖", weekday: "SAT · DAY 03", theme: "河口湖・山中湖",
-    image: "assets/images/fuji.jpg", imageAlt: "富士山景色",
+    date: "12.12", 
+    tab: "12/12 · 河口湖", 
+    weekday: "SAT · DAY 03", 
+    theme: "河口湖・山中湖",
+    image: "assets/images/fuji.jpg", 
+    imageAlt: "富士山景色",
     events: [
       { time: "12:00 —", title: "Fuji Marathon 加購商品", description: "攤位時間 : 12:00—19:00" },
-      { time: "悠悠哉哉", title: "🗻 山中湖走走", description: "湖畔散步、欣賞富士山風景。",
-        links: [{ label: "山中湖地圖", url: "https://www.google.com/maps/search/?api=1&query=山中湖" }] }
+      { time: "悠悠哉哉", title: "🗻 山中湖走走", description: "湖畔散步、富士山拍拍照",
+        links: [{ label: "山中湖地圖", url: "https://www.google.com/maps/search/?api=1&query=山中湖" }] 
+      }
     ],
     info: "<strong>Fuji Marathon 攤位時間</strong><br>12/12（六）12:00～19:00<br>12/13（日）07:00～16:00",
     hotel: "Hospitable inn NIIYA Mt.Fuji",
@@ -93,8 +102,12 @@ const itinerary = [
 
 
   {
-    date: "12.13", tab: "12/13 · 馬拉松", weekday: "SUN · DAY 04", theme: "RACE DAY",
-    image: "assets/images/fuji.jpg", imageAlt: "富士山與湖景",
+    date: "12.13", 
+    tab: "12/13 · 馬拉松", 
+    weekday: "SUN · DAY 04", 
+    theme: "RACE DAY",
+    image: "assets/images/fuji.jpg", 
+    imageAlt: "富士山與湖景",
     events: [
       {
         time: "06:00 —",
@@ -113,12 +126,17 @@ const itinerary = [
         ]
       },
       {
-        time: "接駁前往御殿場飯店",
-        title: "🚌 御殿場",
-        description: "靜岡炭烤漢堡排 さわやか",
+        title: "🚌 接駁前往御殿場飯店",
+        description: "寶哩自行前往"
+      },
+      {
+        time: "Dinner",
+        title: "御殿場",
+        description: "LINE 預約餐廳｜靜岡炭烤漢堡排 さわやか",
         links: [
-          { label: "🍖さわやか", url: "https://maps.app.goo.gl/rcMD8BmBaWREDww3A" },
-          { label: "LINE 預約", url: "https://miniapp.line.me/2006055787-m6P6OJ38/ticketing/3273/" }
+          { label: "🍖靜岡炭烤漢堡排 さわやか", url: "https://maps.app.goo.gl/rcMD8BmBaWREDww3A" },
+          { label: "LINE", url: "https://miniapp.line.me/2006055787-m6P6OJ38/ticketing/3273/" },
+          { label: "Jitokko Kumiai Gotenbaekimaeten", url: "https://maps.app.goo.gl/6HZmCCzG9xrqwU1a8" }
         ]
       }
     ],
@@ -127,32 +145,89 @@ const itinerary = [
     hotelMapUrl: "https://maps.app.goo.gl/BkDXQLs5g8bgdUx96"
   },
 
+  
+  {
+    date: "12.14",
+    tab: "12/14 · 箱根",
+    weekday: "MON · DAY 05",
+    theme: "箱根慢旅行",
+    image: "assets/images/hakone.jpg",
+    imageAlt: "箱根風景",
+
+    events: [
+      {
+        time: "09:05",
+        title: "御殿場站 → 箱根神社",
+        description: "(0920)御殿場站 → (1020)箱根小田急山のホテル",
+        links: [
+          { label: "御殿場站（箱根乙女站3號出口）", url: "https://maps.app.goo.gl/MRoiesudPhHD6zUa7" },
+          { label: "小田急高速巴士", url: "assets/小田急高速巴士.pdf" }
+        ]
+      },
+      {
+        title: "元箱根",
+        description: "和平鳥居·箱根神社·成川美術館",
+        images: [
+          {
+            src: "assets/images/hakone-shrine.jpg",
+            alt: "箱根神社·和平鳥居",
+            url: "https://maps.app.goo.gl/QDZJecRs7xTnLX7Z8"
+          },
+          {
+            src: "assets/images/hakone-museum.jpg",
+            alt: "成川美術館",
+            url: "https://maps.app.goo.gl/7duTY3uxzhqVx7k99"
+          }
+        ]
+      }
+    ],
+
+    hotel: "Toki resort Hakone Bettei",
+    hotelNote: "箱根住宿",
+    hotelMapUrl: "https://maps.app.goo.gl/7Vt5SHtFNdo4ra1C6"
+  },
 
   {
-    date: "12.14", tab: "12/14 · 箱根", weekday: "MON · DAY 05", theme: "箱根慢旅行",
-    image: "assets/images/hakone.jpg", imageAlt: "箱根風景",
+    date: "12.15",
+    tab: "12/15 · 東京",
+    weekday: "TUE · DAY 06",
+    theme: "箱根湯本・東京",
+    image: "assets/images/yokohama.jpg",
+    imageAlt: "橫濱城市風景",
+
     events: [
-      { time: "時間待安排", title: "♨️ 前往箱根", description: "交通方式與沿途景點之後再補充。",
-        links: [{ label: "箱根地圖", url: "https://www.google.com/maps/search/?api=1&query=箱根" }] }
-    ],
-    hotel: "Toki resort Hakone Bettei", hotelNote: "箱根住宿｜地址與訂房連結待補"
-  },
-  {
-    date: "12.15", tab: "12/15 · 橫濱", weekday: "TUE · DAY 06", theme: "小田原・橫濱",
-    image: "assets/images/yokohama.jpg", imageAlt: "橫濱城市風景",
-    events: [
-      { time: "中午", title: "🍜 小田原站附近午餐", description: "餐廳待選。",
-        links: [{ label: "搜尋附近午餐", url: "https://www.google.com/maps/search/?api=1&query=小田原駅+ランチ" }] },
-      { time: "下午／晚上", title: "🎄 橫濱紅磚倉庫聖誕市集", description: "逛聖誕市集、拍照。",
+      {
+        time: "Lunch",
+        title: "🍜 箱根湯本",
+        description: "溫泉街散步、午餐",
         links: [
-          { label: "紅磚倉庫官網", url: "https://www.yokohama-akarenga.jp/" },
-          { label: "地圖導航", url: "https://www.google.com/maps/search/?api=1&query=横浜赤レンガ倉庫" }
-        ] },
-      { time: "之後", title: "🚆 前往成田國際機場第三航廈", description: "前往機場飯店。",
-        links: [{ label: "查看交通", url: "https://www.google.com/maps/dir/?api=1&origin=横浜赤レンガ倉庫&destination=成田空港第3ターミナル&travelmode=transit" }] }
+          { label: "搜尋附近午餐", url: "" }
+        ]
+      },
+      {
+        title: "→ 東京",
+        description: "逛街、晚餐",
+        links: [
+          { label: "東京馳", url: "" }
+        ]
+      },
+      {
+        title: "🚆 前往機場飯店",
+        description: "第二航廈 1 樓・25 號巴士站\n20:50、21:10、21:30、21:50、22:10",
+        links: [
+          {
+            label: "成田東武飯店免費接駁車",
+            url: "https://maps.app.goo.gl/7pDA1SfYGctEnt7k6"
+          }
+        ]
+      }
     ],
-    hotel: "成田東武機場飯店", hotelNote: "成田機場住宿｜地址與訂房連結待補"
+
+    hotel: "成田東武機場飯店",
+    hotelNote: "成田機場住宿",
+    hotelMapUrl: ""
   },
+
   {
     date: "12.16", tab: "12/16 · 回台", weekday: "WED · DAY 07", theme: "平安回家",
     image: "assets/images/airport.jpg", imageAlt: "飛機與天空",
