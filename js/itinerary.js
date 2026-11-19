@@ -208,10 +208,10 @@ const itinerary = [
 
   {
     date: "12.15",
-    tab: "12/15 · 東京",
+    tab: "12/15 · 箱根",
     weekday: "TUE · DAY 06",
     theme: "箱根湯本・東京",
-    image: "assets/images/yokohama.jpg",
+    image: "assets/images/hakone.jpg",
     imageAlt: "橫濱城市風景",
 
     events: [
@@ -244,14 +244,20 @@ const itinerary = [
 
     hotel: "成田東武機場飯店",
     hotelNote: "成田機場住宿",
-    hotelMapUrl: ""
+    hotelMapUrl: "https://maps.app.goo.gl/grtRizaUDtLrJ6ko9"
   },
 
   {
-    date: "12.16", tab: "12/16 · 回台", weekday: "WED · DAY 07", theme: "平安回家",
-    image: "assets/images/airport.jpg", imageAlt: "飛機與天空",
+    date: "12.16", 
+    tab: "12/16 · 回台", 
+    weekday: "WED · DAY 07", 
+    theme: "平安回家",
+    image: "assets/images/tokyo.jpg", 
+    imageAlt: "飛機與天空",
     events: [
-      { time: "08:30 — 11:30", title: "✈️ 東京 → 台北", description: "NRT 第三航廈 → TPE 第一航廈。",
+      { time: "6:30", 
+        title: "✈️ 東京 → 台北", 
+        description: "6:30 | 機場接駁往第二航廈 \n8:30 | NRT 第三航廈 → TPE 第一航廈",
         links: [{ label: "成田機場官網", url: "https://www.narita-airport.jp/" }] }
     ],
     info: "<strong>回家提醒</strong><br>確認退房、行李、護照及登機資訊。"
