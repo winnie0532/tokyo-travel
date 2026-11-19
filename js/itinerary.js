@@ -61,16 +61,17 @@ const itinerary = [
         description: "表演時間 14:00 — 15:40",
         links: [
           { label: "ROCKZA", url: "https://www.google.com/maps/search/?api=1&query=ROCKZA+劇場+東京" },
-          { label: "N+HOTEL 領行李", url: "https://maps.app.goo.gl/cTn4tRjMTTB4pNEAA" },
-          { label: "Alpen TOKYO 領物資", url: "https://maps.app.goo.gl/ndW6gjRMmKhA2DqC7" }
+          { label: "N+HOTEL 領行李", url: "https://maps.app.goo.gl/cTn4tRjMTTB4pNEAA" }
         ]
       },
       {
         time: "Dinner",
         title: "Shinjuku Station",
-        description: "(1383)🚆新宿 → 河口湖站 19:45 - 21:40",
+        description: "Alpen TOKYO 領物資\n(1383)🚆新宿 → 河口湖站 19:45 - 21:40",
         links: [
           { label: "新宿(南口)", url: "https://maps.app.goo.gl/AqHEaeF1pevGTu7M7" },
+          { label: "Alpen TOKYO", url: "https://maps.app.goo.gl/3gM6JdpGnwZCyFWt5" },
+          { label: "Jack Ticket", url: "assets/jack-ticket.pdf" },
           { label: "🍣 Sushi", url: "https://maps.app.goo.gl/t3gXxpFhaxzkt3YU8" },
           { label: "車票", url: "assets/images/Shinjuku-MtFuji.png" }
         ]
@@ -89,9 +90,25 @@ const itinerary = [
     image: "assets/images/fuji.jpg", 
     imageAlt: "富士山景色",
     events: [
-      { time: "12:00 —", title: "Fuji Marathon 加購商品", description: "攤位時間 : 12:00—19:00" },
-      { time: "悠悠哉哉", title: "🗻 山中湖走走", description: "湖畔散步、富士山拍拍照",
-        links: [{ label: "山中湖地圖", url: "https://www.google.com/maps/search/?api=1&query=山中湖" }] 
+      { time: "9:30—", 
+        title: "🗻 河口湖・山中湖", 
+        description: "",
+        images: [
+          {
+            src: "assets/images/fuji_coffee.jpg",
+            alt: "BRAND NEW DAY",
+            url: "https://maps.app.goo.gl/8wzEaSibZLsaJVK79"
+          },
+          {
+            src: "assets/images/fuji_park.jpg",
+            alt: "大石公園",
+            url: "https://maps.app.goo.gl/GWFsTEvc4hpjcrcV8"
+          }
+        ]
+      },
+      { time: "12:00 —", 
+        title: "Fuji Marathon 加購商品", 
+        description: "攤位時間 : 12:00—19:00" 
       }
     ],
     info: "<strong>Fuji Marathon 攤位時間</strong><br>12/12（六）12:00～19:00<br>12/13（日）07:00～16:00",
@@ -110,11 +127,12 @@ const itinerary = [
     imageAlt: "富士山與湖景",
     events: [
       {
-        time: "06:00 —",
-        title: "領物資",
+        time: "07:30-09:00",
+        title: "報到｜領物資・寄放行李",
+        description: "Fujikyu Travel｜領物資\n大型行李寄放帳篷｜收費500日圓",
         links: [
           { label: "Fujikyu Travel", url: "https://maps.app.goo.gl/WfPUw3eGuMHxGDx28" },
-          { label: "運動X生活", url: "assets/運動生活.pdf" }
+          { label: "船津濱停車場", url: "https://maps.app.goo.gl/eG62wpofyHeFf2EEA" }
         ]
       },
       {
@@ -122,7 +140,8 @@ const itinerary = [
         title: "🏃‍♀️ Fuji Marathon",
         description: "河口湖・山中湖｜完賽後記得領物品!",
         links: [
-          { label: "賽事資訊", url: "https://www.google.com/search?q=富士山マラソン+公式" }
+          { label: "Mt. International Marathon", url: "https://zh-tw.mtfujimarathon.com/kawaguchiko/?utm_source=chatgpt.com" },
+          { label: "運動X生活", url: "assets/運動生活.pdf" }
         ]
       },
       {
@@ -136,7 +155,7 @@ const itinerary = [
         links: [
           { label: "🍖靜岡炭烤漢堡排 さわやか", url: "https://maps.app.goo.gl/rcMD8BmBaWREDww3A" },
           { label: "LINE", url: "https://miniapp.line.me/2006055787-m6P6OJ38/ticketing/3273/" },
-          { label: "Jitokko Kumiai Gotenbaekimaeten", url: "https://maps.app.goo.gl/6HZmCCzG9xrqwU1a8" }
+          { label: "居酒屋", url: "https://maps.app.goo.gl/6HZmCCzG9xrqwU1a8" }
         ]
       }
     ],
