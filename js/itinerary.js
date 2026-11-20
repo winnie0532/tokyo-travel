@@ -71,8 +71,8 @@ const itinerary = [
         links: [
           { label: "新宿(南口)", url: "https://maps.app.goo.gl/AqHEaeF1pevGTu7M7" },
           { label: "Alpen TOKYO", url: "https://maps.app.goo.gl/3gM6JdpGnwZCyFWt5" },
-          { label: "Jack Ticket", url: "assets/jack-ticket.pdf" },
           { label: "🍣 Sushi", url: "https://maps.app.goo.gl/t3gXxpFhaxzkt3YU8" },
+          { label: "Jack Ticket", url: "assets/jack-ticket.pdf" },
           { label: "車票", url: "assets/images/Shinjuku-MtFuji.png" }
         ]
       }
@@ -96,13 +96,13 @@ const itinerary = [
         images: [
           {
             src: "assets/images/fuji_coffee.jpg",
-            alt: "BRAND NEW DAY",
-            url: "https://maps.app.goo.gl/8wzEaSibZLsaJVK79"
+            alt: "THE PARK",
+            url: "https://maps.app.goo.gl/Ejk3De1HF6HL6ybM8"
           },
           {
             src: "assets/images/fuji_park.jpg",
-            alt: "大石公園",
-            url: "https://maps.app.goo.gl/GWFsTEvc4hpjcrcV8"
+            alt: "長池親水公園",
+            url: "https://maps.app.goo.gl/YbWbDd6HfstJ7pEZA"
           }
         ]
       },
@@ -145,8 +145,12 @@ const itinerary = [
         ]
       },
       {
-        title: "🚌 接駁前往御殿場飯店",
-        description: "各自前往"
+        title: "🚌 河口湖・御殿場",
+        description: "接駁前往御殿場飯店",
+        links: [
+          { label: "大石公園", url: "https://maps.app.goo.gl/GWFsTEvc4hpjcrcV8" },
+          { label: "BRAND NEW DAY", url: "https://maps.app.goo.gl/8wzEaSibZLsaJVK79" }
+        ]
       },
       {
         time: "Dinner",
