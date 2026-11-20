@@ -146,7 +146,7 @@ const itinerary = [
       },
       {
         title: "🚌 接駁前往御殿場飯店",
-        description: "寶哩自行前往"
+        description: "各自前往"
       },
       {
         time: "Dinner",
@@ -184,7 +184,7 @@ const itinerary = [
         ]
       },
       {
-        title: "元箱根",
+        title: "♨️元箱根",
         description: "和平鳥居·箱根神社·成川美術館",
         images: [
           {
@@ -224,7 +224,7 @@ const itinerary = [
         ]
       },
       {
-        title: "→ 東京",
+        title: "🗼回東京",
         description: "逛街、晚餐",
         links: [
           { label: "東京馳", url: "" }
@@ -236,7 +236,7 @@ const itinerary = [
         links: [
           {
             label: "成田東武飯店免費接駁車",
-            url: "https://maps.app.goo.gl/7pDA1SfYGctEnt7k6"
+            url: "https://www.jalan.net/yad312928/qa/0005408167.html"
           }
         ]
       }
@@ -255,11 +255,11 @@ const itinerary = [
     image: "assets/images/tokyo.jpg", 
     imageAlt: "飛機與天空",
     events: [
-      { time: "6:30", 
+      { time: "8:30", 
         title: "✈️ 東京 → 台北", 
-        description: "6:30 | 機場接駁往第二航廈 \n8:30 | NRT 第三航廈 → TPE 第一航廈",
+        description: "NRT 第三航廈 → TPE 第一航廈",
         links: [{ label: "成田機場官網", url: "https://www.narita-airport.jp/" }] }
     ],
-    info: "<strong>回家提醒</strong><br>確認退房、行李、護照及登機資訊。"
+    info: "<strong>機場接駁往第二航廈 | 6:30、7:00</strong><br> "
   }
 ];
