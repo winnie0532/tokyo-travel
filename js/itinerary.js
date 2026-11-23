@@ -224,14 +224,14 @@ const itinerary = [
         title: "🍜 箱根湯本",
         description: "溫泉街散步、午餐",
         links: [
-          { label: "搜尋附近午餐", url: "" }
+          { label: "附近午餐", url: "" }
         ]
       },
       {
         title: "🗼回東京",
         description: "逛街、晚餐",
         links: [
-          { label: "東京馳", url: "" }
+          { label: "Tokyo Station", url: "https://maps.app.goo.gl/WjPMXrD6KRm8eeSn7" }
         ]
       },
       {
